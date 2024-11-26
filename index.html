@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhouyan Qiu - Resume</title>
+    <title>Zhouyan Qiu - Academic Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         /* General Reset */
-        body, h1, h2, h3, p, ul {
-            margin: 0;
-            padding: 0;
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
         }
+
         body {
             font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #333;
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             margin: 0;
         }
 
         /* Header */
         header {
             text-align: center;
-            padding: 4rem 1rem;
-            background: #007BFF;
-            color: #fff;
+            padding: 2rem 1rem;
+            background: #f8f8f8;
+            color: #333;
+            border-bottom: 1px solid #e0e0e0;
         }
+
         header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 2.2rem;
+            font-weight: 400;
         }
+
         header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 300;
             margin-top: 0.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         /* Main Content */
@@ -46,17 +73,15 @@
         /* Section Styling */
         .section {
             margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #ddd;
         }
-        .section:last-child {
-            border-bottom: none;
-        }
+
         .section h2 {
-            font-size: 1.8rem;
-            color: #007BFF;
+            font-size: 1.6rem;
+            color: #333;
             margin-bottom: 1rem;
-            font-weight: 700;
+            font-weight: 400;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
         }
 
         /* Timeline List */
@@ -64,54 +89,84 @@
             list-style: none;
             padding: 0;
         }
+
         .timeline li {
-            margin-bottom: 1rem;
+            margin-bottom: 0.4rem;
         }
+
         .timeline li::before {
-            content: "•";
-            color: #007BFF;
+            content: "\2022";
+            color: #555;
             font-size: 1.2rem;
             margin-right: 0.5rem;
         }
 
         /* Publications */
         .publication {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
+
         .publication span {
             font-weight: bold;
-            color: #007BFF;
+            color: #333;
         }
 
         /* Footer */
         footer {
             text-align: center;
             padding: 1rem 0;
-            background: #333;
-            color: #fff;
+            background: #f8f8f8;
+            color: #777;
+            border-top: 1px solid #e0e0e0;
             margin-top: 2rem;
         }
+
         footer a {
-            color: #fff;
+            color: #555;
             text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Zhouyan Qiu</h1>
         <p>Postdoctoral Researcher | Remote Sensing | 3D Sensors</p>
     </header>
 
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+
+        <a href="#publications">Publications</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
         <!-- About Section -->
-        <section class="section">
-            <h2>About Me</h2>
-            <p>I am a postdoctoral researcher at the University of Vigo. My research focuses on remote sensing, point clouds, compressive sensing, and 2D/3D sensors for high-precision mapping. I hold a joint PhD from the University of Vigo and the University of Salamanca, and a Master’s degree in Geomatics Engineering from the University of Stuttgart.</p>
+        <section id="about" class="section">
+            <h2>About Me & Research Interests</h2>
+            <p>I am currently a postdoctoral researcher at the University of Vigo, focusing on remote sensing, point
+                clouds, compressive sensing, and 2D/3D sensors for high-precision mapping and applications. I completed
+                a joint PhD program at the University of Vigo and the University of Salamanca, and I obtained my
+                Master's degree in Geomatics Engineering from the University of Stuttgart, Germany.</p>
+            <p>My research interests include:</p>
+            <ul>
+                <li>Remote Sensing and Point Clouds Analysis</li>
+                <li>Compressive Sensing Techniques</li>
+                <li>2D/3D Sensor Fusion for High-Precision Mapping</li>
+                <li>Applications of Mobile Mapping Systems</li>
+            </ul>
         </section>
 
         <!-- Education Section -->
-        <section class="section">
+        <section id="education" class="section">
             <h2>Education</h2>
             <ul class="timeline">
                 <li>2024.03–Present: Postdoctoral Researcher, University of Vigo</li>
@@ -123,26 +178,90 @@
             </ul>
         </section>
 
+        <!-- Research Interests Section -->
+
+
         <!-- Publications Section -->
-        <section class="section">
+        <section id="publications" class="section">
             <h2>Publications</h2>
             <div class="publication">
-                <span>JCR Q1, IF 14.7</span>: Qiu, Zhouyan et al. "External multi-modal imaging sensor calibration for sensor fusion: A review." <i>Information Fusion</i>, 2023.
+                <span>JCR Q1, IF 14.7</span>: Qiu, Zhouyan et al. "External multi-modal imaging sensor
+                calibration for sensor fusion: A review." <i>Information Fusion</i>, 2023.
             </div>
             <div class="publication">
-                <span>JCR Q1, IF 7.4</span>: Qiu, Zhouyan et al. "Low-cost mobile mapping system solution for traffic sign segmentation using Azure Kinect." <i>International Journal of Applied Earth Observation</i>, 2022.
+                <span>JCR Q1, IF 7.4</span>: Qiu, Zhouyan et al. "Low-cost mobile mapping system solution for traffic
+                sign segmentation using Azure Kinect." <i>International Journal of Applied Earth Observation</i>, 2022.
             </div>
-            <!-- Add more publications as necessary -->
+            <div class="publication">
+                <span>JCR Q1, IF 7.4</span>: Qiu, Zhouyan et al. "A novel low-cost multi-sensor solution for pavement
+                distress segmentation and characterization at night." <i>International Journal of Applied Earth
+                    Observation and Geoinformation</i>, 2023.
+            </div>
+            <div class="publication">
+                <span>Conference paper</span>: Qiu, Zhouyan et al. "A novel license plate detection-based
+                Time-To-Collision calculation for forward collision warning using Azure Kinect." <i>IEEE IPAS</i>, 2022.
+            </div>
+            <div class="publication">
+                <span>Conference paper</span>: Qiu, Zhouyan et al. "Evaluation and comparison of different depth cameras
+                for outdoor applications." <i>ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information
+                    Sciences</i>, 2023.
+            </div>
+            <div class="publication">
+                <span>Conference paper</span>: Qiu, Zhouyan et al. "Randomised Compression Ratios for Effective Large
+                Point Cloud Processing Using Compressive Sensing." <i>ISPRS Archives</i>, 2023.
+            </div>
+            <div class="publication">
+                <span>Conference paper</span>: Qiu, Zhouyan et al. "Comparative analysis of image super-resolution: A
+                concurrent study of RGB and depth images." <i>CoSeRa</i>, 2024.
+            </div>
+            <div class="publication">
+                <span>CiteScore - Q2, IF 2.6</span>: Rashdi, Rabia, Joaquín Martínez-Sánchez, Pedro Arias, and Qiu,
+                Zhouyan. "Scanning Technologies to Building Information Modelling: A Review." <i>Infrastructures</i>,
+                2022.
+            </div>
+            <div class="publication">
+                <span>Conference paper</span>: Nazir, Saqib, Qiu, Zhouyan, Daniela Coltuc, Joaquín
+                Martínez-Sánchez, and Pedro Arias. "iDFD: A Dataset Annotated for Depth and Defocus." <i>Image Analysis:
+                    23rd Scandinavian Conference, SCIA 2023</i>, 2023.
+            </div>
+            <div class="publication">
+                <span>Conference paper</span>: Wang, Yuchen, Zhichao Zhang, and Qiu, Zhouyan. "Automated house internal
+                geometric quality inspection using laser scanning." <i>International Conference on Intelligent Earth
+                    Observing and Applications</i>, 2015.
+            </div>
         </section>
 
         <!-- Conferences Section -->
-        <section class="section">
+        <section id="conferences" class="section">
             <h2>Conferences</h2>
             <ul class="timeline">
                 <li>2022: IEEE IPAS (Oral Presentation)</li>
                 <li>2023: ISPRS GSW (Oral Presentation)</li>
                 <li>2024: ISPRS GeoAdvances (Oral Presentation)</li>
+                <li>2024: EG-ICE 2024 (Oral Presentation)</li>
+                <li>2024: CoSeRa 2024 (Oral Presentation)</li>
             </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>As part of the Marie Curie project 'MENELAOS-NT', I worked on advancing geospatial technologies with
+                a focus on developing new methods for data fusion and compressive sensing techniques applied to point
+                clouds and remote sensing data.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p style="margin-bottom: 1rem;">You can reach me through the following platforms:</p>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                <a href="mailto:zhouyan.qiu@uvigo.es">Email</a>
+                <a href="https://scholar.google.com/citations?user=k6oON7gAAAAJ" target="_blank">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/drsqiu/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/msqiu" target="_blank">GitHub</a>
+                <a href="https://orcid.org/0000-0002-0557-3065" target="_blank">ORCID</a>
+            </div>
         </section>
     </div>
 
@@ -150,4 +269,5 @@
         <p>Created by Zhouyan Qiu | <a href="mailto:zhouyan.qiu@uvigo.es">Contact Me</a></p>
     </footer>
 </body>
+
 </html>
